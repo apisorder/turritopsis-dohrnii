@@ -1,4 +1,8 @@
 
+# Programmer:     Cheng, Jeff
+# Last Modified:  05-31-2024 08:48AM
+# Problem:        Python Tutorial 2
+
 import math
 
 name = input("What is your name : ")

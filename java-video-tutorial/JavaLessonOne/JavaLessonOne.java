@@ -1,13 +1,16 @@
 
 // Programmer:     Cheng, Jeff
-// Last Modified:  05-16-2024 10:47AM
+// Last Modified:  05-31-2024 08:50AM
 // Problem:        Java Tutorial 1
 
-public class HelloWorld1
+public class JavaLessonOne
 {
     static String randomString = "String to print";
+    //  final == const
     static final double PINUM = 3.141529;
 
+    //  static => only a class can call this method
+    //  public => accessible by all classes
     public static void main(String[] args)
     {
         System.out.println("String literal = Hello World");
