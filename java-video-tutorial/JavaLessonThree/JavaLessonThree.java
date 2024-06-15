@@ -1,6 +1,6 @@
 
 // Programmer:     Cheng, Jeff
-// Last Modified:  05-31-2024 07:55PM
+// Last Modified:  06-13-2024 09:25PM
 // Problem:        Java Tutorial 3
 
 public class JavaLessonThree 
@@ -27,5 +27,26 @@ public class JavaLessonThree
 
         int biggestValue = (defaultValue > randomNumber) ? defaultValue: randomNumber;
         System.out.println("biggestValue : " + biggestValue);
+
+        char theGrade = 'B';
+        
+        switch( theGrade )
+        {
+            case 'A':
+                System.out.println("Marvelous!");
+                break;
+            case 'B':
+                System.out.println("Outstanding");
+                break;
+            case 'C':
+                System.out.println("Good");
+                break;
+            case 'D':
+                System.out.println("....");
+                break;
+            default:
+                System.out.println("See you next semester again.");
+                break;
+        }
     }    
 }
