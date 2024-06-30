@@ -1,6 +1,6 @@
 
 # Programmer:     Cheng, Jeff
-# Last Modified:  06-21-2024 07:58PM
+# Last Modified:  06-29-2024 07:38PM
 # Problem:        Python Tutorial 5
 
 #   random range module
@@ -61,31 +61,52 @@ height = int(input( "How tall is the tree : " ))-1
 #   5.  Print spaces and then hashes for each row
 #   6.  Print stump spaces  and then 1 hash
 
-bark = height
-number_of_stars = 1
+bark = height-1
+number_of_hashes = 1
 
 pattern = ""
 spaces = 0
-stars = 0
+hashes = 0
 while height >= 0:
-    while spaces <= height:
+    while spaces <= (height-1):
         pattern += ' '
         spaces += 1
-    while stars < number_of_stars:
-        pattern += '*'
-        stars += 1
+    while hashes < number_of_hashes:
+        pattern += '#'
+        hashes += 1
     print(pattern)
     pattern = ""
     spaces = 0
-    stars = 0
-    number_of_stars += 2
+    hashes = 0
+    number_of_hashes += 2
     height -= 1
 
-number_of_stars = 1
+number_of_hashes = 1
 while spaces <= bark:
     pattern += ' '
     spaces += 1
-while stars < number_of_stars:
-    pattern += '*'
-    stars += 1
+while hashes < number_of_hashes:
+    pattern += '#'
+    hashes += 1
 print(pattern)
+
+#   official solution
+tree_height = input("How tall is the tree : ")
+tree_height = int(tree_height)
+spaces = tree_height - 1
+hashes = 1
+stump_spaces = tree_height - 1
+
+while tree_height != 0:
+    for i in range(spaces):
+        print(' ', end="")
+    for i in range(hashes):
+        print('#', end="")
+    print()
+    spaces -= 1
+    hashes += 2
+    tree_height -= 1
+
+for i in range(stump_spaces):
+    print(" ", end="")
+print("#")
