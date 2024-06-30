@@ -5,8 +5,6 @@
 
 import java.util.Scanner;
 
-import org.w3c.dom.UserDataHandler;
-
 //  name of the class == name of the file
 public class JavaLessonTwo
 {
